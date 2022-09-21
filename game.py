@@ -1,15 +1,15 @@
 import random
 
+
 def script():
   player1 = input("Player 1, please enter your name: ")
   print("Please, choose one of three: rock, paper, scissors")
   player1_figure = input(player1 + ", " + "enter your figure: ")
   figure = ["paper", "rock", "scissors"]
   computer_figure = random.choice(figure)
-
+  print("PC IS " + computer_figure)
   if player1_figure == computer_figure:
     print("Draw")
-  
   elif player1_figure == "rock" and computer_figure == "scissors":
     print(player1 + ", you win")
   elif player1_figure == "scissors" and computer_figure == "paper":
